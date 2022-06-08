@@ -1,0 +1,85 @@
+.cinematicVid{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    overflow: hidden;
+    .cinematicVid__background{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+        align-items: center;
+        h1{
+            position: absolute;
+            z-index: 99;
+            color: white;
+            text-align: center;
+            width: 100%;
+            top: 10%;
+            font-size: 70px;
+            text-transform: uppercase;
+            font-style: italic;
+            @media screen and (max-width: 1200px){
+                position: relative;
+                margin-top: 70px;
+            }
+        }
+        .cinematicVid__background__overlay{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: rgb(1, 1, 1,0.6);
+            z-index: 4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            object-fit: cover;
+            z-index: 1;
+        }
+        .cinematicVid__video__main{
+            width: 90%;
+            z-index:9;
+            @media screen and (min-width: 1200px){
+                position: relative;
+                margin-top: 5%;
+            }
+            @media screen and (max-width: 1200px){
+                position: relative;
+            }
+            .cinematicVid__video__main__main{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                z-index: 9;
+            }
+        }
+        
+    }
+    .cinematicVid__scroll{
+        width: 100%;
+        padding-left: 20px;
+        scroll-snap-type: x mandatory;
+        overflow-x: scroll;
+        display: flex;
+        flex-direction: row;
+        .cinematicVid__scroll__item{
+            padding: 10px 20px;
+            cursor: pointer;
+            @media screen and (max-width: 1200px){
+                img{
+                    width: 200px;
+                    height: 100px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}

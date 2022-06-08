@@ -1,0 +1,418 @@
+@media screen and (min-width:1450px){
+    .myProfile{
+        width: 100%;
+        height: 100%;
+        .myProfile__container{
+            width: 100%;
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top right;
+    
+            .myProfile__container__left{
+                width:30%;
+                height: 100%;
+                position: relative;
+                display: flex;
+                left: 10%;
+                flex-direction: column;
+                align-items: center;
+                .myProfile__container__left__name{
+                    position: absolute;
+                    top: 20%;
+                    z-index: 3;
+                    color: white;
+                    font-size: 50px;
+                }
+    
+                .myProfile__container__left__img{
+                    position: absolute;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .flag{
+                        height: 80vh;
+                        position: absolute;
+                        top: 75px;
+                        z-index: 1;
+                    }
+                    .iframe{
+                        position: absolute;
+                        height: 30vh;
+                        z-index: 2;
+                        top: 35vh;
+                    }
+    
+                    .avatar{
+                        height: 20vh;
+                        width: 20vh;
+                        object-fit: cover;
+                        position: absolute;
+                        top: 40vh;
+                        z-index: 1;
+                        border-radius: 50%;
+                    }
+                }
+            }
+    
+            .myProfile__container__overlay__backgound{
+                position: absolute;
+                width: 100%;
+                height: 100vh;
+                top: 0;
+                background-color: rgb(1, 1, 1, 0.2);
+            }
+            .myProfile__container__overlay__bottom{
+                position: absolute;
+                width: 100%;
+                height: 40vh;
+                bottom: 0;
+                background: linear-gradient(0deg, rgba(0,0,0,0.8281687675070029) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7917542016806722) 30%, rgba(8,7,7,0.46122198879551823) 67%, rgba(48,42,42,0) 100%);
+                opacity: 0.8;
+            }
+    
+            .myProfile__container__right__bottom{
+                width: 60%;
+                height: 40vh;
+                bottom: 0;
+                position: absolute;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: left;
+                right: 0;
+                .tft{
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    color: white;
+                    h1{
+                        color: rgb(228, 191, 147);
+                        font-size: 25px;
+                    }
+                    .rank__tft{
+                        letter-spacing: 0.05rem;
+                    }
+                    img{
+                        width: 200px;
+                        object-fit: cover;
+                    }
+                    margin-right: 30px;
+                }
+                .summonerift{
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    color: white;
+                    h1{
+                        color: rgb(228, 191, 147);
+                        font-size: 25px;
+                    }
+                    .rank__summonereft{
+                        letter-spacing: 0.05rem;
+                    }
+                    img{
+                        width: 200px;
+                        object-fit: cover;
+                    }
+                }
+    
+                .best__champion{
+                    display: flex;
+                    flex-direction: row;
+                    width: 40%;
+                    margin-left: 10%;
+                    justify-content: space-between;
+                    text-align: center;
+                    height: 100%;
+                    position: relative;
+                    
+    
+                    .best__champion__item{
+                        margin-top: 30px;
+                        h1{
+                            display: flex;
+                            flex-direction: column;
+                            color: rgb(228, 191, 147);
+                            font-size: 30px;
+                            padding: 10px 0;
+                        }
+    
+                        .champion__avatar{
+                            width: 100px;
+                            height: 100px;
+                            object-fit: cover;
+                            border-radius: 50%;
+                            border: 3px solid rgb(199, 157, 18);
+                        }
+                        .mastery{
+                            width: 80px;
+                            object-fit: cover;
+                        }
+                    }
+                    .best__champion__item1{
+                        h1{
+                            display: flex;
+                            flex-direction: column;
+                            color: rgb(228, 191, 147);
+                            font-size: 30px;
+                            padding: 10px 0;
+                        }
+    
+                        .champion__avatar{
+                            width: 100px;
+                            height: 100px;
+                            object-fit: cover;
+                            border-radius: 50%;
+                            border: 3px solid rgb(199, 157, 18);
+                        }
+                        .mastery{
+                            width: 80px;
+                            object-fit: cover;
+                        }
+                    }
+                }
+    
+            }
+    
+            .myProfile__container__right__top{
+                position: absolute;
+                width: 55%;
+                height: 45%;
+                top: 100px;
+                right: 0;
+                margin-right: 5%;
+                color: white;
+    
+                border: 1px solid rgba(196, 196, 196, 0.5);
+                background-color: rgba(43, 39, 39, 0.5);
+                .myProfile__container__right__top__item{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 20px 20px;
+                    justify-content: center;
+                    @media screen and (min-width: 1500px){
+                        font-size: 1.1rem;
+                    }
+                    font-size: 1rem;
+                    h1{
+                        text-transform: uppercase;
+                        padding-right: 5px;
+                        margin-bottom: 5px;
+                        color: var(--main-color);
+                        margin-left: 40px;
+                    }
+                    h2{
+                        margin-bottom: 5px;
+                        margin-left: 40px;
+                        color: var(--main-color);
+                    }
+                    h3{
+                        margin-bottom: 5px;
+                        margin-left: 40px;
+                        color: var(--main-color);
+                    }
+                    h4{
+                        margin-bottom: 5px;
+                        color: var(--tertiary-color);
+                    }
+                    h5{
+                        margin-bottom: 5px;
+                        color: var(--tertiary-color);
+                    }
+                    h6{
+                        margin-bottom: 5px;
+                        color: var(--tertiary-color);
+                    }
+                    h7{
+                        margin-bottom: 5px;
+                        color: var(--tertiary-color);
+                    }
+                    h8{
+                        margin-bottom: 5px;
+                        color: var(--tertiary-color);
+                    }
+                    h9{
+                        margin-bottom: 5px;
+                        color: var(--tertiary-color);
+                    }
+                    .connect{
+                        padding: 10px 0;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        .icon__connect{
+                            font-size: 30px;
+                            padding: 0 5px;
+                            color: var(--tertiary-color);
+                            cursor: pointer;
+                            transition: all .5s ease;
+                            &:hover{
+                                color: var(--main-color);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1449px){
+    .myProfile{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        .myProfile__container{
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            .myProfile__container__left{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 100%;
+                height: 650px;
+                position: relative;
+                .myProfile__container__left__name{
+                    position: absolute;
+                    z-index: 2;
+                    color: white;
+                    top:100px;
+                    text-align: center;
+                    align-self: center;
+                    display: flex;
+                    font-size: 40px;
+                }
+                .myProfile__container__left__img{
+                    width:100%;
+                    justify-content: center;
+                    display: flex;
+                    top: 0;
+                    .flag{
+                        position: absolute;
+                        top: 70px;
+                        width: 337.5px;
+                        z-index: 1;
+                        object-fit: contain;
+                    }
+                    .iframe{
+                        position: absolute;
+                        width: 200px;
+                        z-index: 3;
+                        top: 170px;
+                        object-fit: contain;
+                    }
+                    .avatar{
+                        position: absolute;
+                        width: 150px;
+                        height: 150px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                        z-index: 2;
+                        top: 200px;
+                    }
+                    
+                }
+            }
+
+            .myProfile__container__right__bottom{
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                width: 375px;
+                height: 250px;
+                color: white;
+                align-items: center;
+                justify-content: center;
+                top: 0;
+                .tft{
+                    position: absolute;
+                    left: 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    left: 10%;
+                    top: 0;
+                    h1{
+                        color: rgb(228, 191, 147);
+                        padding: 5px 0;
+                    }
+                    img{
+                        width: 150px;
+                        object-fit: contain;
+                    }
+                }
+                .summonerift{
+                    position: absolute;
+                    right: 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    right: 10%;
+                    top: 0;
+                    h1{
+                        color: rgb(228, 191, 147);
+                        padding: 5px 0;
+                    }
+                    img{
+                        width: 150px;
+                        object-fit: contain;
+                    }
+                }
+
+                .best__champion{
+                    display: none;
+                }
+
+            }
+
+            .myProfile__container__right__top{
+                color:var(--tertiary-color); ;
+                width: 90%;
+                padding: 5px 5px;
+                border: 1px solid rgba(196, 196, 196, 0.5);
+                background-color: rgba(43, 39, 39, 0.5);
+                .myProfile__container__right__top__item{
+                    h1{
+                        color: rgb(228, 191, 147);
+                    }
+                    h2{
+                        color: rgb(228, 191, 147);
+                    }
+                    h3{
+                        color: rgb(228, 191, 147);
+                    }
+                }
+
+                .connect{
+                    padding: 10px 0;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    .icon__connect{
+                        font-size: 30px;
+                        padding: 0 5px;
+                        color: var(--tertiary-color);
+                        cursor: pointer;
+                        transition: all .5s ease;
+                        &:hover{
+                            color: var(--main-color);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
